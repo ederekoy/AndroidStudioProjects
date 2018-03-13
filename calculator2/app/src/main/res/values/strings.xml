@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">calculator</string>
+    <string name="editText">Sayı 1</string>
+    <string name="editText2">Sayı 2</string>
+    <string name="btnTopla">Topla</string>
+    <string name="lblSonuc">Sonuc</string>
+    <string name="btnCikar">Cıkar</string>
+</resources>
