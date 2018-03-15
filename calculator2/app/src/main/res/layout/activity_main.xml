@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.jd_em.calculator.MainActivity">
+    tools:context="com.example.jd_em.calculator.MainActivity"
+    android:layout_gravity="center">
 
 
     <EditText
@@ -15,7 +16,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/editText"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"/>
 
     <EditText
         android:id="@+id/editText2"
@@ -23,30 +26,34 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/editText2"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"/>
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnTopla" />
+        android:text="@string/btnTopla"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right" />
 
     <Button
         android:id="@+id/btnCikar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnCikar"
-        tools:text="@string/btnCikar" />
+        tools:text="@string/btnCikar"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblSonuc" />
+        android:text="@string/lblSonuc"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:gravity="center"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/ecdTxt" />
 </LinearLayout>
