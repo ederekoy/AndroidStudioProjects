@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">kareDondurme</string>
+    <string name="number">Sayı</string>
+    <string name="button">Yolla</string>
+    <string name="editText">Sayı giriniz</string>
+    <string name="lblGelenSayi"></string>
+    <string name="btnKare">Kare Al</string>
+    <string name="editText2"></string>
+</resources>
