@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">validation</string>
+    <string name="name">Name</string>
+    <string name="nameText"></string>
+    <string name="surname">Surname</string>
+    <string name="surnameText"></string>
+</resources>
