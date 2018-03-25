@@ -10,9 +10,11 @@
 
     <style name="uygulamaSpinner"
         parent="@android:style/Widget.TextView.SpinnerItem">
-
+        <item name="android:textSize">@dimen/spinnerBoyut</item>
 
 
     </style>
+
+    <style name="UygulamaSpinner">UygulamaSpinner</style>
 
 </resources>

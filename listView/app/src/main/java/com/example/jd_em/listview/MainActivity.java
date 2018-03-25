@@ -10,46 +10,58 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+    {
 
-    private ListView listView;
-    private AdapterView adapterView;
-
+    private ListView listGunler;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+        protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bindList();
-        listGunler_onClick();
-
-
+        initComponents();
+        bindData();
+        registerEventHandlers();
     }
 
-    private void bindList(){
+    private void initComponents() {
+        listGunler = findViewById(R.id.listGunler);
+    }
+
+
+    private void bindData()
+    {
+        bindList();
+    }
+
+
+    private void registerEventHandlers() {
+        listGunler_onClick();
+    }
+    private void bindList() {
         ArrayList gunler = new ArrayList();
-        gunler.add("Pzt");
+        gunler.add("Pazartesi");
         gunler.add("Salı");
-        gunler.add("Cars");
-        gunler.add("Pers");
+        gunler.add("Carşamba");
+        gunler.add("Perşembe");
         gunler.add("Cuma");
-        gunler.add("Cts");
+        gunler.add("Cumartesi");
         gunler.add("Pazar");
 
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, android.R.id.text1, gunler);
-        listView.setAdapter(arrayAdapter);
+        listGunler.setAdapter(arrayAdapter);
 
     }
+
 
     private void listGunler_onClick(){
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listGunler.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String secim = listView.getItemAtPosition(position).toString();
-                Toast.makeText(MainActivity.this,"Secim: " + secim, Toast.LENGTH_LONG).show();
+                String secim = listGunler.getItemAtPosition(position).toString();
+                Toast.makeText(MainActivity.this, "Seçim: " + secim, Toast.LENGTH_SHORT).show();
             }
-        });
-    }
 
+    }); }
 
 }

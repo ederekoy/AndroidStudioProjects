@@ -8,27 +8,36 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
-    private ClipData.Item menuItem ;
-}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        registerEventHandlers();
+    }
+
+    public void registerEventHandlers(){
+        onOptionsItemSelected();
+    }
+
+    public void initComponents(){
+
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-    switch (menuItem.getItemId()) {
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+            case R.id.cikis:
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Emin Misiniz?");
+                builder.setMessage("Çıkış yapmak ıstedıgınez emin misiniz?");
+                builder.setIcon(R.drawable.ic_question_answer_black_24dp);
 
-        case R.id.cikis:
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-        builder.setTitle("Emin Misiniz?");
-        builder.setMessage("Çıkış yapmak ıstedıgınez emin misiniz?");
-        builder.setIcon(R.drawable.ic_question_answer_black_24dp);
-
-        AlertDialog alertDialog ;
-        return super.onOptionsItemSelected(item);
+        }
+        return super.onOptionsItemSelected(menuItem);
     }
 }
