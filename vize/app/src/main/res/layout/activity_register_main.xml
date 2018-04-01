@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterMain">
+
+    <EditText
+        android:id="@+id/isim"
+        android:hint="@string/isim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:paddingLeft="@dimen/paddingText"
+        android:paddingRight="@dimen/paddingText"
+        android:paddingStart="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginEnd="@dimen/margin_right"
+        />
+
+    <EditText
+        android:id="@+id/soyisim"
+        android:hint="@string/soyisim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:paddingLeft="@dimen/paddingText"
+        android:paddingRight="@dimen/paddingText"
+        android:paddingStart="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginEnd="@dimen/margin_right"
+         />
+
+    <EditText
+        android:id="@+id/eposta"
+        android:hint="@string/eposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:paddingLeft="@dimen/paddingText"
+        android:paddingRight="@dimen/paddingText"
+        android:paddingStart="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginEnd="@dimen/margin_right"
+        />
+
+    <EditText
+        android:id="@+id/regAdi"
+        android:hint="@string/kullaniciAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:paddingLeft="@dimen/paddingText"
+        android:paddingRight="@dimen/paddingText"
+        android:paddingStart="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginEnd="@dimen/margin_right"
+        />
+
+    <EditText
+        android:id="@+id/regSifre"
+        android:hint="@string/sifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:paddingLeft="@dimen/paddingText"
+        android:paddingRight="@dimen/paddingText"
+        android:paddingStart="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginEnd="@dimen/margin_right"
+        />
+
+    <Button
+        android:id="@+id/regKayit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kayitOl"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/marginL_button"
+        android:layout_marginRight="@dimen/marginR_button"
+        android:layout_marginStart="@dimen/marginL_button"
+        android:layout_marginEnd="@dimen/marginR_button" />
+</LinearLayout>

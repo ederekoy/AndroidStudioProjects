@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_left">10dp</dimen>
+    <dimen name="margin_right">10dp</dimen>
+    <dimen name="paddingText">3dp</dimen>
+    <dimen name="marginL_button">90dp</dimen>
+    <dimen name="marginR_button">90dp</dimen>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/kullaniciAdi"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:paddingLeft="@dimen/paddingText"
+        android:paddingRight="@dimen/paddingText"
+        android:paddingStart="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginEnd="@dimen/margin_right" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/sifre"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:paddingLeft="@dimen/paddingText"
+        android:paddingRight="@dimen/paddingText"
+        android:paddingStart="@dimen/margin_left"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginEnd="@dimen/margin_right" />
+
+    <Button
+        android:id="@+id/button"
+        android:text="@string/giris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/marginL_button"
+        android:layout_marginRight="@dimen/marginR_button"
+        android:layout_marginStart="@dimen/marginL_button"
+        android:layout_marginEnd="@dimen/marginR_button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:text="@string/kayitOl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/marginL_button"
+        android:layout_marginRight="@dimen/marginR_button"
+        android:layout_marginStart="@dimen/marginL_button"
+        android:layout_marginEnd="@dimen/marginR_button"/>
+</LinearLayout>

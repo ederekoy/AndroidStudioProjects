@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">vize</string>
+    <string name="kullaniciAdi">Kullanıcı Adı</string>
+    <string name="sifre">Şifrenizi Giriniz</string>
+    <string name="giris">Giriş Yap</string>
+    <string name="kayitOl">Kayıt Ol</string>
+    <string name="isim">İsim</string>
+    <string name="soyisim">Soyisim</string>
+    <string name="eposta">E-mail</string>
+</resources>
